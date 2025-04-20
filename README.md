@@ -84,13 +84,6 @@ MAX_HISTORY = 60  # Seconds of packet history
 
  Graph view for traffic over time
 
-📸 Splash & Icon
-Make sure to include:
-
-splash.png (600x400 startup image)
-
-icon.ico (tray and window icon)
-
 🧪 Running the App
 ```bash
 python your_script_name.py
