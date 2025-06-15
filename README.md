@@ -36,7 +36,7 @@ pystray
 Pillow
 plyer
 ```
-🧠 How it Works
+## 🧠 How it Works
 Sniffs all incoming IP traffic using Scapy.
 
 Keeps a running total of packet counts per IP per time window.
@@ -47,7 +47,7 @@ Lets the user block/unblock those IPs via Windows Firewall.
 
 Alerts the user via system tray icon changes and native notifications.
 
-🖼️ UI Overview
+## 🖼️ UI Overview
 Main Table – Lists active IPs with port, packet count, and action buttons.
 
 Filter Bar – Enter an IP or port to isolate traffic.
@@ -56,7 +56,7 @@ Toolbar – View blocked IPs, export data, or toggle alert sounds.
 
 Tray Icon – Red when DDoS is detected, green when safe.
 
-🔐 Firewall Interaction
+## 🔐 Firewall Interaction
 Blocked IPs are handled using:
 
 ```bash
@@ -67,7 +67,7 @@ Unblocked IPs are removed using:
 ```bash
 netsh advfirewall firewall delete rule name="Block <IP>"
 ```
-🔧 Configuration
+## 🔧 Configuration
 You can tune detection sensitivity by editing these constants in the script:
 
 ```python
@@ -75,7 +75,7 @@ THRESHOLD = 5000  # Packets in time window before flagging
 MONITOR_SECONDS = 5  # Traffic window duration
 MAX_HISTORY = 60  # Seconds of packet history
 ```
-✅ To-Do
+## ✅ To-Do
  Cross-platform support (Linux/Mac firewall integration)
 
  Auto-update feature
@@ -84,11 +84,11 @@ MAX_HISTORY = 60  # Seconds of packet history
 
  Graph view for traffic over time
 
-🧪 Running the App
+## 🧪 Running the App
 ```bash
 python your_script_name.py
 ```
 Run as administrator on Windows for full functionality (firewall + sniffing).
 
-📜 License
+## 📜 License
 This project is licensed under the MIT License – see the LICENSE file for details.
