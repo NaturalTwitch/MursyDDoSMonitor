@@ -23,6 +23,8 @@ A Python-based desktop application with a GUI built using Tkinter that monitors 
 
 - Python 3.8+
 - Admin privileges (for firewall rules and packet sniffing)
+- [WinPCap](https://www.winpcap.org/)
+- Windows in Developer Mode
 
 ### Install dependencies:
 
